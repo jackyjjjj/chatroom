@@ -69,10 +69,6 @@ void ChatClient::sendMessage(const char *message)
     {
         perror("发送消息失败\n");
     }
-    if (clientSocket != -1)
-    {
-        close(clientSocket);
-    }
 }
 
 void ChatClient::disconnect()

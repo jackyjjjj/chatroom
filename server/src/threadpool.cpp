@@ -183,7 +183,6 @@ void *ThreadPool::manager(void *arg)
     // 如果线程池没有关闭, 就一直检测
     while (!pool->m_shutdown)
     {
-        cout << "check threadpool is shutdown" << endl;
         // 每隔5s检测一次
         sleep(5);
         // 取出线程池中的任务数和线程数量
