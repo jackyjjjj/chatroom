@@ -1,3 +1,6 @@
 server/build/*
 !build/Makefile
 !build/room
+
+client/build/*
+!build/Makefile
