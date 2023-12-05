@@ -4,3 +4,5 @@ server/build/*
 
 client/build/*
 !build/Makefile
+
+.vscode
