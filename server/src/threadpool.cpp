@@ -196,7 +196,7 @@ void *ThreadPool::manager(void *arg)
         // 创建线程
         const int NUMBER = 2;
         // 当前任务个数>存活的线程数 && 存活的线程数<最大线程个数
-        if (queueSize >= liveNum && liveNum < pool->m_maxNum)
+        if (queueSize > 0 && liveNum < pool->m_maxNum)
         {
             // 线程池加锁
             pthread_mutex_lock(&pool->m_lock);
